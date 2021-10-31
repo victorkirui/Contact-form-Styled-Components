@@ -6,7 +6,8 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing:border-box;
     }
     body{
-        height:100vh;
+        height:100%;
+        padding:80px 0px;
         width:100%;
         background:linear-gradient(to bottom, #636FA4,#E8CBC0);
         background-repeat:no-repeat;
@@ -37,6 +38,7 @@ export const StyledForm = styled.form`
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
     h2{
         margin-bottom:20px;
+        font-weight:500;
     }
     `
 export const StyledInput = styled.input`
@@ -49,7 +51,8 @@ export const StyledFieldSet = styled.fieldset`
     border:1px solid #ddd;
     margin:10px 0px;
     legend{
-        margin:0px 10px;
+        display:inline-block;
+        padding:0px 5px 5px;
     }
     label{
         margin-right:10px;
@@ -74,8 +77,15 @@ export const StyledButton = styled.div`
     background:#636FA4;
     color:#fff;
     padding:14px;
+    font-weight:bold;
+    font-size:18px;
     border-radius:5px;
     margin:20px 0px;
     width:200px;
     text-align:center;
+    cursor:pointer;
+    transition:all 0.2s;
+    &:hover{
+        opacity:0.9;
+    }
     `
